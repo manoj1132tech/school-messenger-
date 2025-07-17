@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> KALYAN RAY RAJPOOT INTER COLLEGE MANPUR </title>
+  <title>School WhatsApp Messenger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="firebase-config.js"></script>
+</head>
+<body>
+  <h2>📚 School WhatsApp Messenger</h2>
+
+  <div class="form">
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="text" id="number" placeholder="Parent WhatsApp Number">
+    <button onclick="addContact()">Add Contact</button>
+  </div>
+
+  <textarea id="message" placeholder="Type your message here..."></textarea>
+  <button onclick="sendWhatsApp()">Send WhatsApp to All</button>
+
+  <table id="contactTable">
+    <tr><th>Name</th><th>Number</th></tr>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
